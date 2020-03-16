@@ -1,0 +1,21 @@
+
+th train.lua \
+  -data_dir data/ \
+  -batch_size 20 \
+  -learning_rate 0.00010 \
+  -symmetric 1 \
+  -max_epochs 500 \
+  -savefile xmedianet \
+  -num_caption 1 \
+  -gpuid 2 \
+  -print_every 1 \
+  -nclass 200 \
+  -img_dim 512 \
+  -emb_dim 300 \
+  -learning_rate_decay 1 \
+  -save_every 10000 \
+  -prune 5000 \
+  -doc_length 65 \
+  -checkpoint_dir models/ \
+  -lambda 0.00005 \
+  -wd 0.0001
